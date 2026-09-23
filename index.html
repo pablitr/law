@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estudio Jurídico Ocampo & Rossi | Córdoba</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Source+Sans+Pro:wght@300;400;600&display=swap');
+        body {
+            font-family: 'Source Sans Pro', sans-serif;
+        }
+        h1, h2, h3, h4, h5, h6, .serif {
+            font-family: 'Playfair Display', serif;
+        }
+    </style>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        navy: {
+                            50: '#f0f4f8',
+                            100: '#d9e2ec',
+                            800: '#1e3a5f',
+                            900: '#112240',
+                        },
+                        gold: {
+                            500: '#c5a059',
+                            600: '#b08d4a',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-gray-50 text-gray-800 antialiased">
+    <!-- Navbar -->
+    <nav class="bg-navy-900 text-white fixed w-full z-50 shadow-md">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20 items-center">
+                <div class="flex-shrink-0 flex items-center">
+                    <span class="serif text-2xl font-bold tracking-wider">Ocampo & Rossi</span>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#inicio" class="hover:text-gold-500 transition-colors duration-300">Inicio</a>
+                    <a href="#equipo" class="hover:text-gold-500 transition-colors duration-300">Nuestro Equipo</a>
+                    <a href="#areas" class="hover:text-gold-500 transition-colors duration-300">Áreas de Práctica</a>
+                    <a href="#contacto" class="hover:text-gold-500 transition-colors duration-300">Contacto</a>
+                </div>
+                <div class="md:hidden">
+                    <button id="mobile-menu-btn" class="text-white hover:text-gold-500 focus:outline-none">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-navy-800 pb-4">
+            <a href="#inicio" class="block px-4 py-2 hover:bg-navy-900">Inicio</a>
+            <a href="#equipo" class="block px-4 py-2 hover:bg-navy-900">Nuestro Equipo</a>
+            <a href="#areas" class="block px-4 py-2 hover:bg-navy-900">Áreas de Práctica</a>
+            <a href="#contacto" class="block px-4 py-2 hover:bg-navy-900">Contacto</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="relative pt-32 pb-20 lg:pt-48 lg:pb-32 bg-navy-900 overflow-hidden">
+        <div class="absolute inset-0 opacity-20">
+            <img src="https://images.unsplash.com/photo-1589829085413-56de8ae18c73?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80" alt="Law background" class="w-full h-full object-cover">
+        </div>
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h1 class="text-4xl md:text-5xl lg:text-6xl text-white font-bold mb-6 serif leading-tight">
+                Asesoramiento Legal Integral en Córdoba
+            </h1>
+            <p class="mt-4 text-xl md:text-2xl text-gray-300 max-w-3xl mx-auto font-light mb-10">
+                Experiencia, objetividad y dedicación al servicio de la defensa de sus derechos. Presencia en Córdoba Capital y Valle de Punilla.
+            </p>
+            <a href="#contacto" class="inline-block bg-gold-500 text-white font-semibold px-8 py-3 rounded hover:bg-gold-600 transition-colors duration-300">
+                Consultar
+            </a>
+        </div>
+    </section>
+
+    <!-- About Us (Profiles) -->
+    <section id="equipo" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-navy-900 serif mb-4">Nuestro Equipo de Profesionales</h2>
+                <div class="w-24 h-1 bg-gold-500 mx-auto"></div>
+                <p class="mt-6 text-gray-600 max-w-2xl mx-auto">
+                    Contamos con abogadas de sólida formación académica y trayectoria profesional, orientadas a brindar un análisis jurídico responsable y objetivo a nuestros clientes.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-12 lg:gap-20">
+                <!-- Sonia Ocampo -->
+                <div class="bg-gray-50 rounded-lg overflow-hidden shadow-lg transition-transform hover:-translate-y-1 duration-300">
+                    <img src="/home/pablito/.gemini/antigravity-cli/brain/a2c3d63e-b2f2-42a0-8079-6403f03060bd/lawyer_portrait_1_1790197555420.jpg" alt="Dra. Sonia Ocampo" class="w-full h-80 object-cover object-top">
+                    <div class="p-8">
+                        <h3 class="text-2xl font-bold text-navy-900 serif mb-2">Dra. Sonia Ocampo</h3>
+                        <p class="text-gold-600 font-semibold mb-4"><i class="fas fa-map-marker-alt mr-2"></i>Córdoba Capital</p>
+                        <p class="text-gray-600 mb-4 text-sm leading-relaxed">
+                            Egresada de la Universidad Nacional de Córdoba (UNC). Perito Oficial Tasadora matriculada en el Colegio de Martilleros Corredores Públicos de la Provincia de Córdoba (CAC). Su práctica se caracteriza por la diligencia y la búsqueda de soluciones concretas.
+                        </p>
+                        <ul class="space-y-2 text-sm text-gray-700">
+                            <li><i class="fas fa-check text-gold-500 mr-2"></i>Litigios Civiles y Comerciales</li>
+                            <li><i class="fas fa-check text-gold-500 mr-2"></i>Gestiones Administrativas y Dictámenes</li>
+                            <li><i class="fas fa-check text-gold-500 mr-2"></i>Mediación Judicial</li>
+                            <li><i class="fas fa-check text-gold-500 mr-2"></i>Cobranzas Extrajudiciales</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Nerina Rossi -->
+                <div class="bg-gray-50 rounded-lg overflow-hidden shadow-lg transition-transform hover:-translate-y-1 duration-300">
+                    <img src="/home/pablito/.gemini/antigravity-cli/brain/a2c3d63e-b2f2-42a0-8079-6403f03060bd/lawyer_portrait_2_1790197566512.jpg" alt="Dra. Nerina Rossi" class="w-full h-80 object-cover object-top">
+                    <div class="p-8">
+                        <h3 class="text-2xl font-bold text-navy-900 serif mb-2">Dra. Nerina Rossi</h3>
+                        <p class="text-gold-600 font-semibold mb-4"><i class="fas fa-map-marker-alt mr-2"></i>Villa Giardino, Valle de Punilla</p>
+                        <p class="text-gray-600 mb-4 text-sm leading-relaxed">
+                            Abogada dedicada a la gestión integral de intereses patrimoniales y familiares, con especial énfasis en el asesoramiento preventivo, la negociación, y la resolución de conflictos de forma pacífica.
+                        </p>
+                        <ul class="space-y-2 text-sm text-gray-700">
+                            <li><i class="fas fa-check text-gold-500 mr-2"></i>Derecho Inmobiliario</li>
+                            <li><i class="fas fa-check text-gold-500 mr-2"></i>Sucesiones</li>
+                            <li><i class="fas fa-check text-gold-500 mr-2"></i>Derecho de Familia</li>
+                            <li><i class="fas fa-check text-gold-500 mr-2"></i>Administración de Propiedades</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Practice Areas -->
+    <section id="areas" class="py-20 bg-navy-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-navy-900 serif mb-4">Áreas de Práctica</h2>
+                <div class="w-24 h-1 bg-gold-500 mx-auto"></div>
+                <p class="mt-6 text-gray-600 max-w-2xl mx-auto">
+                    Brindamos asistencia jurídica en diversas ramas del derecho, procurando ofrecer un enfoque analítico y fundamentado para cada situación particular.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Tasaciones -->
+                <div class="bg-white p-8 rounded-lg shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
+                    <div class="w-14 h-14 bg-navy-100 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-balance-scale text-2xl text-navy-800"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-navy-900 mb-3 serif">Tasaciones</h3>
+                    <p class="text-gray-600 text-sm">
+                        Servicios de peritaje oficial y tasación de bienes con evaluación fundamentada y rigurosa.
+                    </p>
+                </div>
+
+                <!-- Sucesiones -->
+                <div class="bg-white p-8 rounded-lg shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
+                    <div class="w-14 h-14 bg-navy-100 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-file-signature text-2xl text-navy-800"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-navy-900 mb-3 serif">Sucesiones</h3>
+                    <p class="text-gray-600 text-sm">
+                        Tramitación de procesos sucesorios, declaratorias de herederos y partición de herencias.
+                    </p>
+                </div>
+
+                <!-- Familia -->
+                <div class="bg-white p-8 rounded-lg shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
+                    <div class="w-14 h-14 bg-navy-100 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-users text-2xl text-navy-800"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-navy-900 mb-3 serif">Familia</h3>
+                    <p class="text-gray-600 text-sm">
+                        Asesoramiento en divorcios, alimentos, régimen comunicacional y acuerdos extrajudiciales.
+                    </p>
+                </div>
+
+                <!-- Propiedades -->
+                <div class="bg-white p-8 rounded-lg shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
+                    <div class="w-14 h-14 bg-navy-100 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-building text-2xl text-navy-800"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-navy-900 mb-3 serif">Propiedades</h3>
+                    <p class="text-gray-600 text-sm">
+                        Gestión inmobiliaria, redacción de contratos, análisis de títulos y administración de inmuebles.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer / Contact -->
+    <footer id="contacto" class="bg-navy-900 text-gray-300 pt-16 pb-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-12 mb-12">
+                <div>
+                    <h3 class="text-2xl font-bold text-white serif mb-6">Ocampo & Rossi</h3>
+                    <p class="text-sm leading-relaxed mb-6">
+                        Estudio Jurídico con sedes en Córdoba Capital y Villa Giardino. Nos rige el compromiso con la ética profesional, el trato formal y la debida diligencia en el ejercicio del derecho.
+                    </p>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-bold text-white mb-6 uppercase tracking-wider text-sm">Sede Córdoba Capital</h4>
+                    <ul class="space-y-4 text-sm">
+                        <li class="flex items-start">
+                            <i class="fas fa-map-marker-alt mt-1 mr-3 text-gold-500"></i>
+                            <span>Córdoba Capital, Provincia de Córdoba</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-envelope mr-3 text-gold-500"></i>
+                            <a href="mailto:socampo@ejemplo.com.ar" class="hover:text-white transition-colors">socampo@ejemplo.com.ar</a>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-user-tie mr-3 text-gold-500"></i>
+                            <span>Dra. Sonia Ocampo</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-lg font-bold text-white mb-6 uppercase tracking-wider text-sm">Sede Punilla</h4>
+                    <ul class="space-y-4 text-sm">
+                        <li class="flex items-start">
+                            <i class="fas fa-map-marker-alt mt-1 mr-3 text-gold-500"></i>
+                            <span>Villa Giardino, Provincia de Córdoba</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-envelope mr-3 text-gold-500"></i>
+                            <a href="mailto:nrossi@ejemplo.com.ar" class="hover:text-white transition-colors">nrossi@ejemplo.com.ar</a>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-user-tie mr-3 text-gold-500"></i>
+                            <span>Dra. Nerina Rossi</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-700 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-sm text-gray-400 mb-4 md:mb-0">
+                    &copy; 2026 Estudio Jurídico Ocampo & Rossi. Todos los derechos reservados.
+                </p>
+                <p class="text-xs text-gray-500 text-center md:text-right max-w-sm">
+                    La información provista es de carácter institucional. El ejercicio de la abogacía es una obligación de medios, por lo que no se aseguran resultados ni plazos predeterminados en ningún asunto jurídico.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const btn = document.getElementById('mobile-menu-btn');
+        const menu = document.getElementById('mobile-menu');
+
+        btn.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
